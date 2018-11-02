@@ -6,7 +6,7 @@
 
 #### General info
 This project is allows add tasks to your list.
-Project use RestAPI - you can save your tasks in local file.
+Project use RestAPI - you can save your tasks in local file: /database/tasks.json.
 	
 #### Technologies
 Project is created with:
@@ -22,7 +22,7 @@ Project is created with:
 $ npm i
 $ npm start
 ```
-- go to the 'database' folder and start JSON Server, 
+- go to the 'database' folder and start JSON Server:
 ```
 $ json-server --watch tasks.json
 
