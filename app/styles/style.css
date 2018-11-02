@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background: #1f2427;
+    /* color: rgb(0, 255, 0); */
+    color: rgb(162,229,166);
+    font-size: 20px;
+    /* text-align: center */
+}
+/* container */
+.document{
+    width: 400px;
+    background: #353c41;
+    padding:  10px;
+    border-radius: 10px;
+    margin: 0 auto
+}
+/* elements done */
+.doneToDo{
+    color: grey;
+    text-decoration:  line-through
+}
+.textInput{
+    background: #1f2427;
+    color: white;
+    font-size: 1.1em;
+    display: inline-block;
+    width: 80%;
+    border: 10px;
+    padding: 10px 0;
+
+}
+.allInput{
+    margin: 20px 0;
+    box-shadow: 1px 1px 10px 5px rgba(204, 224, 20, 0.3);
+
+}
+.buttonAdd{
+    background: #1f2427;
+    /* color: rgb(0, 174, 255); */
+    color: rgb(162,229,166);
+    border: 0px;
+    font-size: 1.1em;
+    display: inline-block;
+    width: 20%;
+    cursor: pointer;
+    padding: 10px 0;
+  
+}
+/* all divs with paragraph */
+div > div{
+    word-wrap: break-word;
+    background: #4b5963;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    /* cursor: pointer; */
+}
+p {
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    width: 75%;
+    display: inline-block
+}
+/* header */
+h1{
+    text-align: center;
+    color: #ffff;
+    
+}
+footer{
+    margin-top: 10px;
+    color:red;
+}
+
+/* nav-> button */
+nav > div{
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+.styleBtnDownload{
+    display: inline-block;
+    width: 50%;
+    /* background-color: rgb(31, 81, 173); */
+    background-color: rgb(89,96,174)
+}
+.styleBtnDelete{
+    /* background-color: rgb(211, 37, 89); */
+    background-color: rgb(202,89,89);
+    display: inline-block;
+    width: 50%;
+}
+
+.saveTask{
+    background: url("../images/dysk.png");
+   display: inline-block;
+   width: 8%;
+   height: 20px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: 0 auto;
+   cursor: copy;
+}
+.deleteTask{
+    background: url("../images/delete2.png");
+    display: inline-block;
+    width: 8%;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    cursor: copy;
+}
