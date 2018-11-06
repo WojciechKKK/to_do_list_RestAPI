@@ -24014,7 +24014,7 @@ var ToDoList = function (_Component) {
           )
         ),
         tasks.map(function (e, key) {
-          return _react2.default.createElement(_ToDoItem2.default, { key: key, element: e.name, done: e.done, deleteItem: _this2.deleteItem.bind(_this2, key) });
+          return _react2.default.createElement(_ToDoItem2.default, { key: e.name, element: e.name, done: e.done, deleteItem: _this2.deleteItem.bind(_this2, key) });
         }),
         _react2.default.createElement(_NewToDoForm2.default, {
           fnI: this.addToState,
