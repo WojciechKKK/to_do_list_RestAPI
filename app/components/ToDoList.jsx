@@ -80,7 +80,7 @@ class ToDoList extends Component{
               {this.props.title}
             </h1>
           </header>
-          {tasks.map((e,key) => <ToDoItem key={key} element={e.name} done={e.done}  deleteItem={this.deleteItem.bind(this,key)} />)}
+          {tasks.map((e,key) => <ToDoItem key={e.name} element={e.name} done={e.done}  deleteItem={this.deleteItem.bind(this,key)} />)}
           <NewToDoForm 
             fnI={this.addToState} 
             val={element}
