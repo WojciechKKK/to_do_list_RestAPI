@@ -3,6 +3,7 @@
 body {
     font-family: 'Varela Round', sans-serif;
     background: #1f2427;
+    /* 1f2427 */
     /* color: rgb(0, 255, 0); */
     color: rgb(162,229,166);
     font-size: 20px;
@@ -50,8 +51,9 @@ body {
     cursor: pointer;
     padding: 10px 0;
     margin-left: 2px;
-    border-radius: 10px
+    border-radius: 10px;
 }
+
 /* all divs with paragraph */
 div > div{
     word-wrap: break-word;
