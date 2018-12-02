@@ -29,6 +29,7 @@ body {
     width: 80%;
     border: 10px;
     padding: 10px 0;
+    border-radius: 10px
 }
 
 .textInput:focus{
@@ -48,8 +49,8 @@ body {
     width: 19%;
     cursor: pointer;
     padding: 10px 0;
-    margin-left: 4px;
-  
+    margin-left: 2px;
+    border-radius: 10px
 }
 /* all divs with paragraph */
 div > div{
