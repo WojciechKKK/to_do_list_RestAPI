@@ -13,48 +13,48 @@ class ToDoList extends Component{
         element: '',
       }
     }
-    //pobiera taski z bazy -button
+    //download tasks from Database - button
     downloadAllTask = () => {
-      let actuallyList = this.state.tasks;
+      let actuallyList = [];
       fetch('http://localhost:3000/tasks')
         .then(response => response.json())
+        .then(json => json.map(el => actuallyList.push(el)))
         .then(json => {
-          json.map(el => actuallyList.push(el));
-          json.map(el => console.log(el.id));
-          setTimeout(()=> {
-            alert(`Downloaded tasks from document: ${json.length}`)
-          },500);
-          console.log(actuallyList)
           this.setState({
             tasks: actuallyList
-          })
+          });
+          setTimeout(()=> {
+            alert(`Downloaded ${json.length} tasks from the Database`)
+          },300);
         })
-        .catch(error => alert('Brak połączenia z bazą danych -> RestAPI'))
+        .catch(error => alert('Error -> RestAPI'));
+      // console.log(actuallyList)
     }
 
-    //usuwa state -button
+    //delete state - button
     deleteState = () => {
       this.setState({
         tasks: []
       });
-      console.log('Deleted all tasks');
+      // console.log('Deleted all tasks');
     }
 
-    //ustawia state
+    //state for input
     addToState = (e) => {
       this.setState({
         element: e.target.value
       })
     }
-    //dodaje element
+
+    //add new task
     addElement = () => {
-      const {element, tasks, counter} = this.state;
+      const {element, tasks } = this.state;
       if(element != false){
         let allList = tasks;
         allList.push({
           name: element, 
           done: false,
-        });
+          });
         this.setState({
         tasks: allList,
         element: '',
@@ -62,14 +62,29 @@ class ToDoList extends Component{
       }
     }
 
-    
-    deleteItem = indexToDelete => {
+    //for delete items
+    deleteItem = (el) => {
       this.setState(({ tasks }) => ({
-        tasks: tasks.filter((element, index) => index !== indexToDelete)
+        tasks: tasks.filter(item => item !== el)
       }));
-      console.log('Taksk został usunięty')
-    };
-    // deleteItem={this.deleteItem.bind(this,key)}
+      // console.log('Task został usunięty');
+      //delete from database if tasks is 'saved'
+      if(el.saved == 'saved'){
+        let idElement = el.id
+        fetch(`http://localhost:3000/tasks/${idElement}`, {
+          method: 'DELETE'});
+        setTimeout(()=> {
+            alert(`Task ${el.name} has been deleted from Database`)
+            },300);
+      } 
+    }
+    //function confirm question
+    confirmQuestion = (question, makeFunction) => {
+      let answerQuestion = confirm(question);
+        if(answerQuestion == true){
+          makeFunction()
+        }
+    }
 
     render(){
       const { tasks , element} = this.state;
@@ -80,14 +95,34 @@ class ToDoList extends Component{
               {this.props.title}
             </h1>
           </header>
-          {tasks.map((e,key) => <ToDoItem key={e.name} element={e.name} done={e.done}  deleteItem={this.deleteItem.bind(this,key)} />)}
-          <NewToDoForm 
-            fnI={this.addToState} 
-            val={element}
-            fnC={this.addElement} />
+            {tasks.map(e => {
+              return (
+                <ToDoItem 
+                  title={e} 
+                  key={e.name} 
+                  info={e.saved} 
+                  numberId={e.id} 
+                  element={e.name} 
+                  done={e.done} 
+                  fnConfirm={this.confirmQuestion}
+                  fnDelete={this.deleteItem} 
+                />)
+            })}
+            <NewToDoForm 
+              val={element}
+              fnI={this.addToState} 
+              fnC={this.addElement} 
+            />
           <nav>
-            <DeleteBtn fnD={this.deleteState} />
-            <DownloadList fnDownload={this.downloadAllTask} fnDelete={this.deleteState} />
+            <DeleteBtn 
+              fnConfirm={this.confirmQuestion} 
+              fnD={this.deleteState} 
+            />
+            <DownloadList 
+              fnConfirm={this.confirmQuestion} 
+              fnDownload={this.downloadAllTask} 
+              fnDelete={this.deleteState} 
+            />
           </nav>
         </div>
       )
