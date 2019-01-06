@@ -48,12 +48,17 @@ class ToDoList extends Component{
 
     //add new task
     addElement = () => {
+      let newDate = new Date();
+      let date = newDate.toString();
+      let findGMT = date.search("G");
+      let finalDate = date.slice(0,findGMT);
       const {element, tasks } = this.state;
       if(element != false){
         let allList = tasks;
         allList.push({
           name: element, 
           done: false,
+          date: finalDate
           });
         this.setState({
         tasks: allList,
@@ -104,6 +109,7 @@ class ToDoList extends Component{
                   numberId={e.id} 
                   element={e.name} 
                   done={e.done} 
+                  date={e.date}
                   fnConfirm={this.confirmQuestion}
                   fnDelete={this.deleteItem} 
                 />)

@@ -13,12 +13,13 @@ class ToDoItem extends Component{
       //tutaj można dorbić PUT i aktualizować done w bazie if(this.props.info  == 'saved'){
       let confirmQuestion = confirm('Are you sure want to save your task in Database ?');
       if(confirmQuestion == true){
-        const {element} = this.props;
+        const {element, date} = this.props;
         const { done } = this.state;
         let newElementFromList = {
           'name': element, 
           'done': done,
-          'saved': 'saved'
+          'saved': 'saved',
+          'date': date
           };
         fetch('http://localhost:3000/tasks', {
         method: "post",
@@ -65,11 +66,12 @@ class ToDoItem extends Component{
       return(
         <div>
           <p className={this.state.done ? 'doneToDo' : ''} onClick={this.toggleDone}>
-            {this.props.element}
+            {this.props.element}<br />
+            <a className="date">{this.props.date}</a>
           </p>
           <div onClick={this.deleteItemTask} className="deleteTask" title="Delete"></div> 
           {this.props.info == 'saved'
-          ? <i className="info-saved">saved</i>
+          ? <div className="info-saved" title="Saved">saved</div>
           : <div onClick={this.saveTask} className="saveTask" title="Save"></div>}
         </div>
       )
@@ -78,3 +80,4 @@ class ToDoItem extends Component{
  
   export default ToDoItem;
 
+{/* <i className="info-saved">saved</i> */}

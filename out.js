@@ -24183,7 +24183,7 @@ exports = module.exports = __webpack_require__(22)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Varela+Round);", ""]);
 
 // module
-exports.push([module.i, "body {\n  font-family: 'Varela Round', sans-serif;\n  background: #1f2427;\n  /* 1f2427 */\n  /* color: rgb(0, 255, 0); */\n  color: #a2e5a6;\n  font-size: 20px;\n  /* text-align: center */\n}\n\n/* container */\n\n.document {\n  width: 400px;\n  background: #353c41;\n  padding: 10px;\n  border-radius: 10px;\n  margin: 0 auto;\n}\n\n/* elements done */\n\n.doneToDo {\n  color: grey;\n  text-decoration: line-through;\n}\n\n.textInput {\n  background: #1f2427;\n  color: white;\n  font-size: 1.1em;\n  display: inline-block;\n  width: 80%;\n  border: 10px;\n  padding: 10px 0;\n  border-radius: 10px;\n}\n\n.textInput:focus {\n  box-shadow: 1px 1px 10px 5px rgba(204, 224, 20, 0.3);\n}\n\n.allInput {\n  margin: 20px 0;\n  background: #353c41;\n}\n\n.buttonAdd {\n  background: #1f2427;\n  /* color: rgb(0, 174, 255); */\n  color: #a2e5a6;\n  border: 0px;\n  font-size: 1.1em;\n  display: inline-block;\n  width: 19%;\n  cursor: pointer;\n  padding: 10px 0;\n  margin-left: 2px;\n  border-radius: 10px;\n}\n\n/* all divs with paragraph */\n\ndiv > div {\n  word-wrap: break-word;\n  background: #4b5963;\n  margin: 10px 0 0 0;\n  border-radius: 10px;\n  /* cursor: pointer; */\n}\n\np {\n  margin: 0;\n  padding: 15px;\n  cursor: pointer;\n  width: 75%;\n  display: inline-block;\n}\n\n/* header */\n\nh1 {\n  text-align: center;\n  color: #ffff;\n}\n\nfooter {\n  margin-top: 10px;\n  color: red;\n}\n\n/* nav-> button */\n\nnav > div {\n  margin: 10px 0 0 0;\n  border-radius: 10px;\n  cursor: pointer;\n  color: white;\n  text-align: center;\n}\n\n.styleBtnDownload {\n  display: inline-block;\n  width: 50%;\n  /* background-color: rgb(31, 81, 173); */\n  background-color: #5960ae;\n}\n\n.styleBtnDelete {\n  /* background-color: rgb(211, 37, 89); */\n  background-color: #ca5959;\n  display: inline-block;\n  width: 50%;\n}\n\n.saveTask {\n  background: url(" + escape(__webpack_require__(23)) + ");\n  display: inline-block;\n  width: 8%;\n  height: 20px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  margin: 0 auto;\n  cursor: pointer;\n}\n\n.deleteTask {\n  background: url(" + escape(__webpack_require__(24)) + ");\n  display: inline-block;\n  width: 8%;\n  height: 20px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  margin: 0 auto;\n  cursor: pointer;\n}\n\n.deleteTask:hover {\n  background: url(" + escape(__webpack_require__(25)) + ");\n  display: inline-block;\n  width: 8%;\n  height: 20px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  margin: 0 auto;\n  cursor: pointer;\n}\n\n.saveTask:hover {\n  background: url(" + escape(__webpack_require__(26)) + ");\n  display: inline-block;\n  width: 8%;\n  height: 20px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  margin: 0 auto;\n  cursor: pointer;\n}\n\n.info-saved {\n  display: inline-block;\n  width: 8%;\n  color: grey;\n  font-size: 9px;\n  text-align: center;\n  height: 100%;\n}\n\n.info-saved:hover {\n  color: white;\n  font-size: 10px;\n  cursor: auto;\n}", ""]);
+exports.push([module.i, "body {\n  font-family: 'Varela Round', sans-serif;\n  background: #1f2427;\n  color: #a2e5a6;\n  font-size: 20px;\n  /* text-align: center */\n}\n\n/* container */\n\n.document {\n  width: 400px;\n  background: #353c41;\n  padding: 10px;\n  border-radius: 10px;\n  margin: 0 auto;\n}\n\n/* elements done */\n\n.doneToDo {\n  color: grey;\n  text-decoration: line-through;\n}\n\n.date {\n  color: grey;\n  font-size: 0.5em;\n  text-decoration: none !important;\n}\n\n.textInput {\n  background: #1f2427;\n  color: white;\n  font-size: 1.1em;\n  display: inline-block;\n  width: 80%;\n  border: 10px;\n  padding: 10px 0;\n  border-radius: 10px;\n  text-align: center;\n}\n\n.textInput:focus {\n  box-shadow: 1px 1px 10px 5px rgba(204, 224, 20, 0.3);\n}\n\n.allInput {\n  margin: 20px 0;\n  background: #353c41;\n}\n\n.buttonAdd {\n  background: #1f2427;\n  /* color: rgb(0, 174, 255); */\n  color: #a2e5a6;\n  border: 0px;\n  font-size: 1.1em;\n  display: inline-block;\n  width: 19%;\n  cursor: pointer;\n  padding: 10px 0;\n  margin-left: 2px;\n  border-radius: 10px;\n}\n\n.buttonAdd:hover {\n  background: #a2e5a6;\n  color: #000;\n}\n\n/* all divs with paragraph */\n\ndiv > div {\n  word-wrap: break-word;\n  background: #4b5963;\n  margin: 10px 0 0 0;\n  border-radius: 10px;\n  /* cursor: pointer; */\n  position: relative;\n}\n\np {\n  margin: 0 auto;\n  padding: 10px;\n  cursor: pointer;\n  /* width: 75%; */\n  width: 97%;\n  display: inline-block;\n}\n\n/* header */\n\nh1 {\n  text-align: center;\n  color: #ffff;\n}\n\nfooter {\n  margin-top: 10px;\n  color: red;\n}\n\n/* nav-> button */\n\nnav > div {\n  margin: 10px 0 0 0;\n  border-radius: 10px;\n  cursor: pointer;\n  color: white;\n  text-align: center;\n}\n\n.styleBtnDownload,\n.styleBtnDelete {\n  display: inline-block;\n  width: 47%;\n  padding: 5px 0;\n  margin: 5px;\n}\n\n.styleBtnDownload {\n  background-color: #5960ae;\n}\n\n.styleBtnDelete {\n  background-color: #ca5959;\n}\n\n.saveTask {\n  background: url(" + escape(__webpack_require__(23)) + ");\n  bottom: 10px;\n  right: 5px;\n}\n\n.deleteTask {\n  background: url(" + escape(__webpack_require__(24)) + ");\n  bottom: 10px;\n  right: 30px;\n}\n\n.saveTask,\n.deleteTask,\n.info-saved {\n  display: inline-block;\n  width: 8%;\n  height: 20px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  margin: 0 auto;\n  cursor: pointer;\n  position: absolute;\n}\n\n.deleteTask:hover {\n  background: url(" + escape(__webpack_require__(25)) + ");\n}\n\n.saveTask:hover {\n  background: url(" + escape(__webpack_require__(26)) + ");\n}\n\n.deleteTask:hover,\n.saveTask:hover,\n.info-saved:hover {\n  display: inline-block;\n  width: 8%;\n  height: 20px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  margin: 0 auto;\n  cursor: pointer;\n}\n\n.info-saved {\n  width: 8%;\n  color: white;\n  text-align: center;\n  font-size: 9px;\n  bottom: 10px;\n  right: 5px;\n  margin: auto auto;\n}\n\n.info-saved:hover {\n  color: white;\n  cursor: context-menu;\n}", ""]);
 
 // exports
 
@@ -24881,6 +24881,10 @@ var ToDoList = function (_Component) {
     };
 
     _this.addElement = function () {
+      var newDate = new Date();
+      var date = newDate.toString();
+      var findGMT = date.search("G");
+      var finalDate = date.slice(0, findGMT);
       var _this$state = _this.state,
           element = _this$state.element,
           tasks = _this$state.tasks;
@@ -24889,7 +24893,8 @@ var ToDoList = function (_Component) {
         var allList = tasks;
         allList.push({
           name: element,
-          done: false
+          done: false,
+          date: finalDate
         });
         _this.setState({
           tasks: allList,
@@ -24978,6 +24983,7 @@ var ToDoList = function (_Component) {
             numberId: e.id,
             element: e.name,
             done: e.done,
+            date: e.date,
             fnConfirm: _this2.confirmQuestion,
             fnDelete: _this2.deleteItem
           });
@@ -25046,13 +25052,16 @@ var ToDoItem = function (_Component) {
       //tutaj można dorbić PUT i aktualizować done w bazie if(this.props.info  == 'saved'){
       var confirmQuestion = confirm('Are you sure want to save your task in Database ?');
       if (confirmQuestion == true) {
-        var element = _this.props.element;
+        var _this$props = _this.props,
+            element = _this$props.element,
+            date = _this$props.date;
         var done = _this.state.done;
 
         var newElementFromList = {
           'name': element,
           'done': done,
-          'saved': 'saved'
+          'saved': 'saved',
+          'date': date
         };
         fetch('http://localhost:3000/tasks', {
           method: "post",
@@ -25117,12 +25126,18 @@ var ToDoItem = function (_Component) {
         _react2.default.createElement(
           'p',
           { className: this.state.done ? 'doneToDo' : '', onClick: this.toggleDone },
-          this.props.element
+          this.props.element,
+          _react2.default.createElement('br', null),
+          _react2.default.createElement(
+            'a',
+            { className: 'date' },
+            this.props.date
+          )
         ),
         _react2.default.createElement('div', { onClick: this.deleteItemTask, className: 'deleteTask', title: 'Delete' }),
         this.props.info == 'saved' ? _react2.default.createElement(
-          'i',
-          { className: 'info-saved' },
+          'div',
+          { className: 'info-saved', title: 'Saved' },
           'saved'
         ) : _react2.default.createElement('div', { onClick: this.saveTask, className: 'saveTask', title: 'Save' })
       );
@@ -25133,6 +25148,9 @@ var ToDoItem = function (_Component) {
 }(_react.Component);
 
 exports.default = ToDoItem;
+
+
+{/* <i className="info-saved">saved</i> */}
 
 /***/ }),
 /* 31 */
@@ -25199,11 +25217,11 @@ var NewToDoForm = function (_Component) {
                     , className: 'textInput' //style
                     , onChange: this.newAddToState //ustawia state
                     , type: 'text',
-                    placeholder: 'Enter a new task',
+                    placeholder: 'add a new task',
                     value: this.props.val }),
                 _react2.default.createElement(
                     'button',
-                    { className: 'buttonAdd', onClick: this.newAddElement, title: 'Press Enter or click here' },
+                    { className: 'buttonAdd', onClick: this.newAddElement, title: 'Press enter or click here' },
                     '+'
                 )
             );
@@ -25212,15 +25230,6 @@ var NewToDoForm = function (_Component) {
 
     return NewToDoForm;
 }(_react.Component);
-//albo wersja funkcyjna - w param przyjmuje propsy
-// const NewToDoForm = ({fnI, val, fnC}) => {
-//     return (
-//         <div>
-//             <input onChange={fnI} type="text" value={val}></input>
-//             <button onClick={fnC}>Add</button>
-//         </div>
-//     )
-// }
 
 exports.default = NewToDoForm;
 
@@ -25340,7 +25349,6 @@ var DownloadList = function (_Component) {
             valueButton: "Download tasks",
             titleButton: "Download all tasks from the Database",
             question: "Are you sure want to download tasks from Database and delete actually list ?"
-
         };
         return _this;
     }

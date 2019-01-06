@@ -27,25 +27,16 @@ class NewToDoForm extends Component{
                     className="textInput" //style
                     onChange={this.newAddToState} //ustawia state
                     type="text" 
-                    placeholder="Enter a new task"
+                    placeholder="add a new task"
                     value={this.props.val}> 
                     {/* // ^ pobiera z state to co wpisujemy  */}
                 </input>
-                <button className="buttonAdd" onClick={this.newAddElement} title="Press Enter or click here">
+                <button className="buttonAdd" onClick={this.newAddElement} title="Press enter or click here">
                     +
                 </button>
             </div>
         )
     }
 }
-//albo wersja funkcyjna - w param przyjmuje propsy
-// const NewToDoForm = ({fnI, val, fnC}) => {
-//     return (
-//         <div>
-//             <input onChange={fnI} type="text" value={val}></input>
-//             <button onClick={fnC}>Add</button>
-//         </div>
-//     )
-// }
 
 export default  NewToDoForm

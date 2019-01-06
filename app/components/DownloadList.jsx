@@ -7,7 +7,6 @@ class DownloadList extends Component{
             valueButton: "Download tasks",
             titleButton: "Download all tasks from the Database",
             question: "Are you sure want to download tasks from Database and delete actually list ?"
-            
         }
     }
     //download tasks from database
