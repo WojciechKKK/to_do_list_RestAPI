@@ -5,7 +5,7 @@
 * [Setup](#setup)
 
 #### General info
-This project is allows add tasks to your list.
+This project allows add tasks to your list.
 Project use RestAPI - you can save your tasks in local file: /database/tasks.json.
 	
 #### Technologies
